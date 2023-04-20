@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #667aff;
-	--dark-color-b: #7386ff;
-	--light-color: #e6e9ff;
+	--dark-color-a: #403f45;
+	--dark-color-b: #e6ce1d;
+	--light-color: #f4dd08;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -18,7 +18,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background: var(--light-color);
+	background: #777;
 	margin: 20px;
 }
 
@@ -36,6 +36,7 @@ a {
 	background: var(--light-color);
 	color: var(--dark-color-a);
 	border: 0;
+	border-radius: 5px;
 	font-size: 17px;
 }
 
@@ -76,6 +77,7 @@ a {
 	background: rgba(0, 0, 0, 0.1);
 	padding: 10px;
 	margin-bottom: 20px;
+	border-radius: 10px;
 }
 
 .chat-sidebar h3 {
@@ -102,7 +104,7 @@ a {
 .chat-messages .message .meta {
 	font-size: 15px;
 	font-weight: bold;
-	color: var(--dark-color-b);
+	color: #fff;
 	opacity: 0.7;
 	margin-bottom: 7px;
 }
@@ -114,6 +116,8 @@ a {
 .chat-form-container {
 	padding: 20px 30px;
 	background-color: var(--dark-color-a);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .chat-form-container form {
@@ -123,13 +127,14 @@ a {
 .chat-form-container input[type='text'] {
 	font-size: 16px;
 	padding: 5px;
+	border-radius: 10px;
 	height: 40px;
 	flex: 1;
 }
 
 /* Join Page */
 .join-container {
-	max-width: 500px;
+	max-width: 550px;
 	margin: 80px auto;
 	color: #fff;
 }
@@ -145,6 +150,8 @@ a {
 .join-main {
 	padding: 30px 40px;
 	background: var(--dark-color-b);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .join-main p {
@@ -163,6 +170,7 @@ a {
 .join-main input[type='text'] {
 	font-size: 16px;
 	padding: 5px;
+	border-radius: 10px;
 	height: 40px;
 	width: 100%;
 }
@@ -170,6 +178,7 @@ a {
 .join-main select {
 	font-size: 16px;
 	padding: 5px;
+	border-radius: 10px;
 	height: 40px;
 	width: 100%;
 }
@@ -177,6 +186,8 @@ a {
 .join-main .btn {
 	margin-top: 20px;
 	width: 100%;
+	background: var(--dark-color-a);
+	color: #fff;
 }
 
 @media (max-width: 700px) {
